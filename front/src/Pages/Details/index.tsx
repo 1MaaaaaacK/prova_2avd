@@ -89,11 +89,11 @@ const showForms = () => {
         </ul>
         {showForm && (
           <Form ref={formRef} onSubmit={handleSubmit}>
-          <Input name="professor" placeholder="Professor" />
-          <Input name="disciplina" placeholder="Disciplina" />
-          <Input name="dia_semana" placeholder="Dia Semana" />
-          <Input name="periodo" placeholder="Periodo" />
-          <Input name="horario" placeholder="Horario" />
+          <Input name="professor" placeholder="Professor" defaultValue={professores?.professor}/>
+          <Input name="disciplina" placeholder="Disciplina" defaultValue={professores?.disciplina}/>
+          <Input name="dia_semana" placeholder="Dia Semana" defaultValue={professores?.dia_semana}/>
+          <Input name="periodo" placeholder="Periodo" defaultValue={professores?.periodo}/>
+          <Input name="horario" placeholder="Horario" defaultValue={professores?.horario}/>
           <Button type="submit">Alterar</Button>
         </Form>
         )}
